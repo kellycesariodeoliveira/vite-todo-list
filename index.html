@@ -12,16 +12,16 @@
 </head>
 
 <header>
-  <h1 class="myTasksMobile">My Tasks</h1>
-  <input type="text" id="myInput" placeholder="Add new task">
-  <button onclick="newElement(document.getElementById('myInput').value)" class="addBtn"> > </button>
   <img src="./img/burger.png" alt="" class="imgAll">
+  <h1 class="myTasksMobile">My Tasks</h1>
 </header>
 
 <body>
   <main>
 
     <section class="firstSection">
+      <input type="text" id="myInput" placeholder="Add new task">
+      <button onclick="newElement(document.getElementById('myInput').value)" class="addBtn"> > </button>
     </section>
 
     <section class="secondSection">
@@ -35,10 +35,6 @@
         </ul>
     </section>
   </main>
-  
-  <footer>
-    <span onclick="newElementModal()" class="addModal"> + </span>
-  </footer>
 </body>
 
 <script src="./js/index.js"></script>
