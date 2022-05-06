@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <header>
-  <img src="./img/burger.png" alt="" class="imgAll">
-  <h1 class="myTasksMobile">My Tasks</h1>
+
 </header>
 
 <body>
   <main>
-
-    <section class="firstSection">
-      <input type="text" id="myInput" placeholder="Add new task">
-      <button onclick="newElement(document.getElementById('myInput').value)" class="addBtn"> > </button>
-    </section>
-
-    <section class="secondSection">
-      <ul id="myList" class="todoList">
-      </ul>
-    </section>
+    <div class="container">
+      <div>
+        <section class="preSection">
+          <img src="./img/burger.png" alt="" class="imgAll">
+          <h1 class="myTasksMobile">My Tasks</h1>
+        </section>
+        <section class="firstSection">
+          <input type="text" id="myInput" placeholder="Add new task">
+          <button onclick="newElement(document.getElementById('myInput').value)" class="addBtn"> > </button>
+        </section>
+      </div>
       
-    <section class="thirdSection">
-      <h4>Completed</h4>
+      <section class="secondSection">
+        <ul id="myList" class="todoList">
+        </ul>
+      </section>
+      
+      <section class="thirdSection">
+        <h4>Completed</h4>
         <ul id="myCompletedList" class="completedTodoList">
         </ul>
-    </section>
+      </section>
+    </div>
   </main>
 </body>
 

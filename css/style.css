@@ -1,4 +1,10 @@
 body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,6 +12,9 @@ body {
     background: #38404B;
     padding-top: 50px;
     margin: 0;
+    width: 1280px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .firstSection {
@@ -130,11 +139,28 @@ input[type="radio"]  {
     display: none;
 }
 
+.completedTodoList{
+    text-decoration: line-through;
+    color:#94ADCF;
+}
+
 /*mobile*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)  {
     body {
         background: #38404B;
         font-family: 'Ubuntu', sans-serif;
+        width: 420px;
+        height: 900px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        width: 80%;
+        height: auto;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 20px;
     }
     
     .imgAll{
@@ -205,6 +231,11 @@ input[type="radio"]  {
         height: inherit;
         margin-top: revert;
     }
+
+    .completedTodoList{
+        text-decoration: line-through;
+        color:#94ADCF;
+    }
 }
 
 /*tables e ipads*/
@@ -212,6 +243,14 @@ input[type="radio"]  {
     body {
         background: #38404B;
         font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container{
+        background: #38404B;
+        width: 87%;
+        height: auto;
+        margin: 2rem;
+        padding: 2rem;
     }
         
     .secondSection {
@@ -266,6 +305,11 @@ input[type="radio"]  {
         margin-left: 666px;
         margin-bottom: -48px;
     }
+
+    .completedTodoList{
+        text-decoration: line-through;
+        color:#94ADCF;
+    }
 }
 
 /*dispositivos > 1280px */
@@ -278,5 +322,10 @@ input[type="radio"]  {
         background: #38404B;
         padding-top: 50px;
         margin: 0;
+    }
+
+    .completedTodoList{
+        text-decoration: line-through;
+        color:#94ADCF;
     }
 }
