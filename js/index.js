@@ -58,6 +58,31 @@ function newCompletedElement(task) {
   sortList("myCompletedList")
 }
 
+function newElement(task) {
+  if(task != ""){
+    const formattedTask = capitalizeFirstLetter(task);
+    let li = document.createElement("li");
+    let t = document.createTextNode(formattedTask);
+    li.appendChild(t);
+    document.getElementById("myList").appendChild(li);
+    document.getElementById("myInput").value = "";
+    let input = document.createElement("INPUT");
+    input.setAttribute("type","radio");
+    input.className = "close";
+    input.value = formattedTask;
+    ;
+    li.appendChild(input);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        let div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+    sortList("myList");
+  }
+  }
+
 //Função - ordem alfabética
 function sortList(List) {
     let list, i, switching, b, shouldSwitch;
